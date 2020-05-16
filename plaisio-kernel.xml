@@ -1,0 +1,9 @@
+<kernel>
+    <properties>
+        <property>
+            <type>\Plaisio\Config\Config</type>
+            <name>config</name>
+            <description>The helper object for retrieving values of configuration parameters.</description>
+        </property>
+    </properties>
+</kernel>
