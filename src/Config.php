@@ -36,17 +36,17 @@ interface Config
    *
    * @return float
    */
-  public function manFiniteFloat(int $cfgId): float;
+  public function manFloat(int $cfgId): float;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
-   * Returns the value of a mandatory float configuration parameter.
+   * Returns the value of a mandatory float including NaN, -INF, and INF configuration parameter.
    *
    * @param int $cfgId The ID of the configuration parameter.
    *
    * @return float
    */
-  public function manFloat(int $cfgId): float;
+  public function manFloatInclusive(int $cfgId): float;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
@@ -74,7 +74,7 @@ interface Config
    *
    * @param int $cfgId The ID of the configuration parameter.
    *
-   * @return array
+   * @return array|null
    */
   public function optArray(int $cfgId): ?array;
 
@@ -96,17 +96,17 @@ interface Config
    *
    * @return float|null
    */
-  public function optFiniteFloat(int $cfgId): ?float;
+  public function optFloat(int $cfgId): ?float;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
-   * Returns the value of an optional float configuration parameter.
+   * Returns the value of an optional float including NaN, -INF, and INF configuration parameter.
    *
    * @param int $cfgId The ID of the configuration parameter.
    *
    * @return float|null
    */
-  public function optFloat(int $cfgId): ?float;
+  public function optFloatInclusive(int $cfgId): ?float;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
